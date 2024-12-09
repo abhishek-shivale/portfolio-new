@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${fontSans.variable} container mx-auto`}>
+      <body className={`${fontSans.variable} container mx-auto bg-black overflow-x-hidden`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -138,14 +138,15 @@ const PortfolioWebsite = () => {
                 <h1 className="text-4xl font-bold text-white">
                   <TextGenerateEffect
                     words="Abhishek Shivale"
-                    className="text-white !text-3xl"
+                    className="text-white !text-5xl"
                   />
                 </h1>
                 <p className="text-xl text-neutral-400">
                   Passionate Full Stack Developer with expertise in{" "}
-                  <Highlight>MERN Stack</Highlight> and{" "}
-                  <Highlight>AI Integration</Highlight>
+                  <Highlight>Node.js</Highlight>, <Highlight>Next.js</Highlight>
+                  , and <Highlight>MERN Stack</Highlight>.
                 </p>
+
                 <div className="relative w-full max-w-md mx-auto h-10">
                   <SparklesCore
                     background="transparent"
@@ -167,12 +168,13 @@ const PortfolioWebsite = () => {
                       },
                       {
                         Icon: Github,
-                        href: "https://github.com/abhishekshivale",
+                        href: "https://github.com/abhishek-shivale",
                       },
                     ].map(({ Icon, href }) => (
                       <a
                         key={href}
                         href={href}
+                        target="_blank"
                         className="text-white hover:text-neutral-300 transition-colors"
                       >
                         <Icon size={24} />
@@ -227,25 +229,25 @@ const PortfolioWebsite = () => {
 
       case "projects":
         return (
-          <div className="container mx-auto px-4 py-8">
+          <div className="container mx-auto px-4 py-8 overflow-hidden">
             <h2 className="text-4xl font-extrabold text-center text-white mb-12">
               Projects
             </h2>
             <div
-          ref={ref}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
-        >
-          {projects.map((project, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
+              ref={ref}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
             >
-              <ProjectCard {...project} />
-            </motion.div>
-          ))}
-        </div>
+              {projects.map((project, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={inView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: index * 0.2 }}
+                >
+                  <ProjectCard {...project} />
+                </motion.div>
+              ))}
+            </div>
           </div>
         );
 
@@ -256,7 +258,7 @@ const PortfolioWebsite = () => {
               Education
             </h2>
 
-            <Card className="bg-neutral-900 p-8 rounded-xl">
+            <Card className="bg-black p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-white mb-4">
                 Bachelor of Computer Application
               </h3>
@@ -276,8 +278,8 @@ const PortfolioWebsite = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <div className=" max-w-5xl">
+    <div className="min-h-screen text-white">
+      <div className=" container mx-auto px-4 py-12 max-w-5xl">
         {/* Navigation */}
         <div className="flex justify-center mb-12">
           <div className="bg-neutral-800 rounded-full p-2 flex space-x-2 border border-neutral-700">
@@ -301,12 +303,11 @@ const PortfolioWebsite = () => {
           </div>
         </div>
 
-        {/* Content Area */}
         <AnimatePresence mode="wait">{renderSection()}</AnimatePresence>
       </div>
       <Particles
         className="absolute inset-0 z-0"
-        quantity={100}
+        quantity={400}
         ease={80}
         color={color}
         refresh
