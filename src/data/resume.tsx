@@ -8,20 +8,26 @@ export const DATA = {
   location: "Pune, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/pune",
   description:
-    "Node.js Developer exploring AI and automation. Passionate about backend solutions and sharing tech insights.",
+    "Backend Developer exploring AI and automation. Passionate about building scalable systems, optimizing performance, and sharing deep tech insights.",
   summary:
-    "At the end of 2024, I decided to step away from my job to dedicate myself to learning and creating impactful projects. Over the past year, I’ve gained experience as a Node.js full-stack developer, built the entire backend for ClimaChampions, developed an interest in Twitter bots, and explored automation and AI-driven concepts. Currently, I’m focused on mastering DSA, C++, and TypeScript while working on innovative ideas. I also enjoy sharing my progress and insights on Twitter.",
+    "I’m a Backend Developer passionate about AI, automation, and building scalable backend systems. With hands-on experience in Node.js, TypeScript, NestJS, MongoDB and PostgreSQL, I specialize in designing efficient, high-performance solutions.",
   avatarUrl: "/me.png",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
     "Node.js",
+    "Typescript",
+    "C",
+    "Next.js",
     "Postgres",
     "Docker",
     "C++",
+    "React",
     "MongoDB",
     "LangChain",
+    "Python",
+    "CSS",
+    "Java",
+    "Linux",
+    "AWS"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -52,12 +58,12 @@ export const DATA = {
 
         navbar: true,
       },
-      Youtube: {
-        name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
-        icon: Icons.youtube,
-        navbar: false,
-      },
+      // Youtube: {
+      //   name: "Youtube",
+      //   url: "https://dub.sh/dillion-youtube",
+      //   icon: Icons.youtube,
+      //   navbar: false,
+      // },
       email: {
         name: "Send Email",
         url: "mailto:abhishekshivale45@gmail.com",
@@ -77,10 +83,10 @@ export const DATA = {
       title: "Full-time Software Trainee",
       logoUrl:
         "https://res.cloudinary.com/dmhge6flm/image/upload/v1717398740/Favicon.png",
-      start: "May 2024",
-      end: "Jan 2025",
+      start: "Jan 2024",
+      end: "Mar 2025",
       description:
-        "maintained and developed a RESTful Node.js backend for ClimaChampions' core business, optimizing query processing with vector-based search to enhance search results. I integrated LangChain AI to enable the addition of sustainability projects through PDF processing and designed a scalable, efficient database schema tailored to project requirements.",
+        "I worked as a Node.js Backend Developer at ClimaChampions, where my main task was to understand requirements and create solutions for various problems. I designed and optimized database schemas, built RESTful APIs, and implemented vector search to improve search accuracy. I also integrated AI into their platform to automate processes and enhance functionality.",
     },
   ],
   education: [
@@ -94,31 +100,6 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "AI-powered Twitter bot",
-      href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
-      dates: "January 2025 - Present",
-      active: true,
-      description:
-        "An AI-powered Twitter bot built with TypeScript to share anime updates via RSS feeds, AI-generated content, and automated scheduling.",
-      technologies: [
-        "Node.js",
-        "Typescript",
-        "Node-corn",
-        "Winston",
-        "Langchain",
-        "Twitter API",
-      ],
-      links: [
-        {
-          type: "source",
-          href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/bot.png",
-      video: "",
-    },
     {
       title: "Tiny Url",
       href: "https://tinyurl-one.vercel.app",
@@ -207,6 +188,31 @@ export const DATA = {
         },
       ],
       image: "/email.png",
+      video: "",
+    },
+    {
+      title: "AI-powered Twitter bot",
+      href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
+      dates: "January 2025 - Present",
+      active: true,
+      description:
+        "An AI-powered Twitter bot built with TypeScript to share anime updates via RSS feeds, AI-generated content, and automated scheduling.",
+      technologies: [
+        "Node.js",
+        "Typescript",
+        "Node-corn",
+        "Winston",
+        "Langchain",
+        "Twitter API",
+      ],
+      links: [
+        {
+          type: "source",
+          href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/bot.png",
       video: "",
     },
   ],
