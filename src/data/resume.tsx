@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Exploring AI and automation.",
   summary:
-    "I’m a Backend Developer passionate about AI, automation, and building scalable backend systems. With hands-on experience in Node.js, Python, TypeScript, NestJS, MongoDB and PostgreSQL, I specialize in designing efficient, high-performance solutions.",
+    "A Backend / Fullstack Developer with 1.5 years of hands-on experience in Node.js (Express.js, NestJS), React, Next.js, MongoDB, PostgreSQL, and Python (Flask). Specialized in AI and automation.",
   avatarUrl: "/me.png",
   skills: [
     "Node.js",
@@ -31,7 +31,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://blog.abhishek.win", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "abhishekshivale45@gmail.com",
@@ -76,7 +76,19 @@ export const DATA = {
 
   work: [
     {
-      company: "ClimaChampions",
+      company: "Freelancing",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "FreeLance Developer",
+      logoUrl:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/h_200,w_200/v1745657872/atkjbhocsiyv2zw2rg80.jpg",
+      start: "Jan 2024",
+      end: "Mar 2025",
+      description:
+        "Currently i work as a Freelance Developer, where I developed a trading bot using Python that analyzes six months of historical data to predict swing trade movements, targeting a 15% monthly return. My work focuses on converting trading strategies into code.",
+    },{
+      company: "EcoStart Ventures Inc",
       href: "https://www.climachampions.com",
       badges: [],
       location: "Remote",
@@ -86,7 +98,7 @@ export const DATA = {
       start: "Jan 2024",
       end: "Mar 2025",
       description:
-        "I worked as a Node.js Backend Developer at ClimaChampions, where my main task was to understand requirements and create solutions for various problems. I designed and optimized database schemas, built RESTful APIs, and implemented vector search to improve search accuracy. I also integrated AI into their platform to automate processes and enhance functionality.",
+        "I worked as a Node.js Backend Developer at EcoStart, where my main task was to understand requirements and create solutions for various problems. I designed and optimized database schemas, built RESTful APIs, and implemented vector search to improve search accuracy. I also integrated AI into their platform to automate processes and enhance functionality.",
     },
   ],
   education: [
@@ -100,6 +112,56 @@ export const DATA = {
     },
   ],
   projects: [
+    {
+      title: "Video Transcoding Pipeline",
+      href: "https://github.com/abhishek-shivale/video_streaming",
+      dates: "Jan 2025 - Feb 2025",
+      active: true,
+      description:
+        "A video transcoding pipeline built with TurboRepo, NestJS and BullMQ. Supports direct-to-S3 uploads, auto-generates multi-bitrate HLS streams, and handles 100+ video jobs.",
+      technologies: [
+        "TurboRepo",
+        "NestJS",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "BullMQ",
+        "Redis",
+        "AWS S3",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/video_streaming",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/Video_Transcoding.mp4",
+    },
+    {
+      title: "Novel Hunter",
+      href: "https://github.com/abhishek-shivale/novel-hunter", 
+      dates: "Jan 2025 - Present",
+      active: true,
+      description:
+        "A Flask-based web scraper that provides novel rankings, chapter lists, and detailed novel information through simple API endpoints. Helps users discover and explore novels by category with ease.",
+      technologies: [
+        "Flask",
+        "Python",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/novel-hunter",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/novel-hunter.png",
+      video: "",
+    },        
     {
       title: "Tiny Url",
       href: "https://tinyurl-one.vercel.app",
