@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Exploring AI and automation.",
   summary:
-    "A Backend / Fullstack Developer with 1.5 years of hands-on experience in Node.js (Express.js, NestJS), React, Next.js, MongoDB, PostgreSQL, and Python (Flask). Specialized in AI and automation.",
+    "A Backend Developer with 1.5 years of hands-on experience in Node.js (Express.js, NestJS), React, Next.js, MongoDB, PostgreSQL, and Python (Flask). Specialized in AI and automation.",
   avatarUrl: "/me.png",
   skills: [
     "Node.js",
