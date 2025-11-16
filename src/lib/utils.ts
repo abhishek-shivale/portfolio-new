@@ -35,3 +35,8 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+export const YOE = (
+    (new Date().getTime() - new Date('2024-01-01').getTime()) /
+    (1000 * 60 * 60 * 24 * 365)
+).toFixed(1);
