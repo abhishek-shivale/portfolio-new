@@ -6,24 +6,75 @@ import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
+import type { Metadata } from "next";
 import Link from "next/link";
 import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
+
 export default function Page() {
+  const profileJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    name: `${DATA.name} - Backend Engineer in Pune`,
+    url: DATA.url,
+    description: DATA.description,
+    mainEntity: {
+      "@id": `${DATA.url}/#person`,
+      "@type": "Person",
+      name: DATA.name,
+      url: DATA.url,
+      image: `${DATA.url}${DATA.avatarUrl}`,
+      jobTitle: "Backend Engineer",
+      description: DATA.description,
+      email: `mailto:${DATA.contact.email}`,
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Pune",
+        addressRegion: "Maharashtra",
+        addressCountry: "IN",
+      },
+      worksFor: {
+        "@type": "Organization",
+        name: DATA.work[0].company,
+      },
+      alumniOf: {
+        "@type": "CollegeOrUniversity",
+        name: DATA.education[0].school,
+        url: DATA.education[0].href,
+      },
+      knowsAbout: DATA.skills,
+      sameAs: [
+        DATA.contact.social.GitHub.url,
+        DATA.contact.social.LinkedIn.url,
+        DATA.contact.social.X.url,
+      ],
+    },
+  };
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(profileJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <section id="hero">
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/snug"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-5xl/snug">
+                  Hi, I&apos;m {DATA.name} 👋
+                </h1>
+              </BlurFade>
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}

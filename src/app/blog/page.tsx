@@ -1,10 +1,22 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import { getBlogPosts } from "@/data/blog";
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Blog",
-  description: "My thoughts on software development, life, and more.",
+export const metadata: Metadata = {
+  title: "Software Engineering Blog",
+  description:
+    "Software engineering articles by Abhishek Shivale about backend systems, Node.js, TypeScript, databases, distributed systems, and Rust.",
+  alternates: {
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Software Engineering Blog",
+    description:
+      "Articles about backend systems, Node.js, TypeScript, databases, distributed systems, and Rust.",
+    url: "/blog",
+    type: "website",
+  },
 };
 
 const BLUR_FADE_DELAY = 0.04;
@@ -15,7 +27,9 @@ export default async function BlogPage() {
   return (
     <section>
       <BlurFade delay={BLUR_FADE_DELAY}>
-        <h1 className="font-medium text-2xl mb-8 tracking-tighter">blog</h1>
+        <h1 className="font-medium text-2xl mb-8 tracking-tighter">
+          Software Engineering Blog
+        </h1>
       </BlurFade>
       {posts
         .sort((a, b) => {

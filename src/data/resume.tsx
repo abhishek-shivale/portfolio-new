@@ -9,7 +9,7 @@ export const DATA = {
   location: "Pune, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/pune",
   description:
-    "Backend engineer building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, and modern data infrastructure.",
+    "Backend engineer in Pune building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, PostgreSQL, and Rust.",
   summary: `A backend engineer with ${YOE} years of experience building multi-tenant and event-driven systems using Node.js, TypeScript, NestJS, Kafka, gRPC, ScyllaDB, ClickHouse, PostgreSQL, and MongoDB. Experienced in authentication, authorization, messaging, payments, billing, background processing, database design, load testing, and production debugging. I also build Rust systems projects focused on PostgreSQL change data capture, asynchronous processing, real-time networking, and Solana programs.`,
   avatarUrl: "/me.png",
   skills: [

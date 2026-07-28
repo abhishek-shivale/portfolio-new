@@ -25,17 +25,22 @@ export async function generateMetadata({
     summary: description,
     image,
   } = post.metadata;
-  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og?title=${title}`;
+  let ogImage = image ? `${DATA.url}${image}` : `${DATA.url}/og.png`;
 
   return {
     title,
     description,
+    authors: [{ name: DATA.name, url: DATA.url }],
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title,
       description,
       type: "article",
       publishedTime,
       url: `${DATA.url}/blog/${post.slug}`,
+      authors: [DATA.name],
       images: [
         {
           url: ogImage,
@@ -79,11 +84,20 @@ export default async function Blog({
             description: post.metadata.summary,
             image: post.metadata.image
               ? `${DATA.url}${post.metadata.image}`
-              : `${DATA.url}/og?title=${post.metadata.title}`,
+              : `${DATA.url}/og.png`,
             url: `${DATA.url}/blog/${post.slug}`,
+            mainEntityOfPage: `${DATA.url}/blog/${post.slug}`,
             author: {
+              "@id": `${DATA.url}/#person`,
               "@type": "Person",
               name: DATA.name,
+              url: DATA.url,
+            },
+            publisher: {
+              "@id": `${DATA.url}/#person`,
+              "@type": "Person",
+              name: DATA.name,
+              url: DATA.url,
             },
           }),
         }}

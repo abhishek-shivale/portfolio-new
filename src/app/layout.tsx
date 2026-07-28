@@ -15,17 +15,30 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Backend Engineer in Pune`,
     template: `%s | ${DATA.name}`,
   },
   description: DATA.description,
+  authors: [{ name: DATA.name, url: DATA.url }],
+  creator: DATA.name,
+  publisher: DATA.name,
+  applicationName: `${DATA.name} Portfolio`,
+  category: "technology",
   openGraph: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} | Backend Engineer in Pune`,
     description: DATA.description,
     url: DATA.url,
-    siteName: `${DATA.name}`,
+    siteName: `${DATA.name} Portfolio`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: `${DATA.name}, Backend Engineer`,
+      },
+    ],
   },
   robots: {
     index: true,
@@ -39,12 +52,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
     card: "summary_large_image",
-  },
-  verification: {
-    google: "",
-    yandex: "",
+    title: `${DATA.name} | Backend Engineer in Pune`,
+    description: DATA.description,
+    creator: "@abhishekwinn",
+    images: ["/og.png"],
   },
 };
 
