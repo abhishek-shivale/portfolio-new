@@ -159,6 +159,38 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Cassie",
+      href: "https://cassieoracle.xyz/",
+      dates: "2026",
+      active: false,
+      description:
+        "A permissionless optimistic oracle on Solana. Users can post bountied questions, submit bonded answers, dispute proposals, and resolve escalated cases through a reputation-weighted council. It also supports callbacks for external programs.",
+      technologies: [
+        "Rust",
+        "Solana",
+        "Anchor",
+        "Next.js",
+        "Surfpool",
+        "CPI",
+        "PDAs",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://cassieoracle.xyz/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/cassie",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203778/ChatGPT_Image_Jul_28_2026_07_26_04_AM_ftqdl7.png",
+      video: "/Cassie.mp4",
+    },
+    {
       title: "Sketch",
       href: "https://github.com/abhishek-shivale/sketch",
       dates: "2026",
@@ -176,33 +208,6 @@ export const DATA = {
       image:
         "https://res.cloudinary.com/dygubvmg6/image/upload/v1785202553/ChatGPT_Image_Jul_28_2026_07_05_44_AM_pf8dei.png",
       video: "",
-    },
-    {
-      title: "Cassie",
-      href: "https://github.com/abhishek-shivale/cassie",
-      dates: "2026",
-      active: false,
-      description:
-        "A permissionless optimistic oracle on Solana. Users can post bountied questions, submit bonded answers, dispute proposals, and resolve escalated cases through a reputation-weighted council. It also supports callbacks for external programs.",
-      technologies: [
-        "Rust",
-        "Solana",
-        "Anchor",
-        "Next.js",
-        "Surfpool",
-        "CPI",
-        "PDAs",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/abhishek-shivale/cassie",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image:
-        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203778/ChatGPT_Image_Jul_28_2026_07_26_04_AM_ftqdl7.png",
-      video: "/Cassie.mp4",
     },
     {
       title: "Stele",
@@ -423,24 +428,6 @@ export const DATA = {
         },
       ],
       image: "/email.png",
-      video: "",
-    },
-    {
-      title: "ChronoGrapher Contribution",
-      href: "https://github.com/GitBrincie212/ChronoGrapher",
-      dates: "Active Contribution",
-      active: true,
-      description:
-        "An open-source contribution to a developer-experience focused job scheduler and workflow orchestration platform designed for speed and extensibility.",
-      technologies: ["Open Source", "Job Scheduling", "Workflow Orchestration"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/GitBrincie212/ChronoGrapher",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
       video: "",
     },
   ],
