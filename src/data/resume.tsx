@@ -3,296 +3,449 @@ import {HomeIcon, NotebookIcon} from "lucide-react";
 import {YOE} from "@/lib/utils";
 
 export const DATA = {
-    name: "Abhishek Shivale",
-    initials: "AS",
-    url: "https://abhishek.win",
-    location: "Pune, Maharashtra, India",
-    locationLink: "https://www.google.com/maps/place/pune",
-    description:
-        "Exploring AI and automation.",
-    summary:
-        `A software engineer with ${YOE} years of experience specializing in Node.js (Express.js, NestJS) and Python (Flask). Skilled in building distributed, high-performance systems using ScyllaDB, gRPC, Kafka, MongoDB, and PostgreSQL.`,
-    avatarUrl: "/me.png",
-    skills: [
-        "Node.js",
-        "Python",
-        "Typescript",
-        "Next.js",
-        "C",
-        "Postgres",
-        "Docker",
-        "C++",
-        "React",
-        "MongoDB",
-        "LangChain",
-        "CSS",
-        "Java",
-        "Linux",
-        "AWS"
-    ],
-    navbar: [
-        {href: "/", icon: HomeIcon, label: "Home"},
-        {href: "https://blog.abhishek.win", icon: NotebookIcon, label: "Blog"},
-    ],
-    contact: {
-        email: "abhishekshivale45@gmail.com",
-        tel: "+123456789",
-        social: {
-            GitHub: {
-                name: "GitHub",
-                url: "https://github.com/abhishek-shivale",
-                icon: Icons.github,
-
-                navbar: true,
-            },
-            LinkedIn: {
-                name: "LinkedIn",
-                url: "https://www.linkedin.com/in/abhishek-shivale",
-                icon: Icons.linkedin,
-
-                navbar: true,
-            },
-            X: {
-                name: "X",
-                url: "https://x.com/BlackPearl_0001",
-                icon: Icons.x,
-
-                navbar: true,
-            },
-            // Youtube: {
-            //   name: "Youtube",
-            //   url: "https://dub.sh/dillion-youtube",
-            //   icon: Icons.youtube,
-            //   navbar: false,
-            // },
-            email: {
-                name: "Send Email",
-                url: "mailto:abhishekshivale45@gmail.com",
-                icon: Icons.email,
-
-                navbar: true,
-            },
-        },
+  name: "Abhishek Shivale",
+  initials: "AS",
+  url: "https://abhishek.win",
+  location: "Pune, Maharashtra, India",
+  locationLink: "https://www.google.com/maps/place/pune",
+  description:
+    "Backend engineer building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, and modern data infrastructure.",
+  summary: `A backend engineer with ${YOE} years of experience building multi-tenant and event-driven systems using Node.js, TypeScript, NestJS, Kafka, gRPC, ScyllaDB, ClickHouse, PostgreSQL, and MongoDB. Experienced in authentication, authorization, messaging, payments, billing, background processing, database design, load testing, and production debugging. I also build Rust systems projects focused on PostgreSQL change data capture, asynchronous processing, real-time networking, and Solana programs.`,
+  avatarUrl: "/me.png",
+  skills: [
+    "Node.js",
+    "TypeScript",
+    "NestJS",
+    "Express.js",
+    "Kafka",
+    "gRPC",
+    "BullMQ",
+    "Redis",
+    "Valkey",
+    "ScyllaDB",
+    "ClickHouse",
+    "PostgreSQL",
+    "MongoDB",
+    "Prisma",
+    "Drizzle",
+    "Docker",
+    "AWS",
+    "GitHub Actions",
+    "k6",
+    "Linux",
+    "Rust",
+    "Tokio",
+    "Axum",
+    "Dioxus",
+    "Solana",
+    "Anchor",
+    "Arweave",
+    "Python",
+    "Flask",
+    "Next.js",
+    "React",
+  ],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "https://blog.abhishek.win", icon: NotebookIcon, label: "Blog" },
+  ],
+  contact: {
+    email: "abhishekshivale01@gmail.com",
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/abhishek-shivale",
+        icon: Icons.github,
+        navbar: true,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/abhishek-shivale/",
+        icon: Icons.linkedin,
+        navbar: true,
+      },
+      X: {
+        name: "X",
+        url: "https://x.com/abhishekwinn",
+        icon: Icons.x,
+        navbar: true,
+      },
+      email: {
+        name: "Send Email",
+        url: "mailto:abhishekshivale01@gmail.com",
+        icon: Icons.email,
+        navbar: true,
+      },
     },
+  },
+  work: [
+    {
+      company: "Xoyal IT Services",
+      href: "#",
+      badges: ["Current"],
+      location: "Pune, Maharashtra",
+      title: "Node.js Developer",
+      logoUrl:
+        "https://media.licdn.com/dms/image/v2/D4D0BAQEeljnxoh_UTA/company-logo_100_100/B4DZmErQYRGsAQ-/0/1758867556359/xoyal_logo?e=1764806400&v=beta&t=SCt1iNkpkNghH3fTCNMiH4EImS4lcysyxFYuhgSsJqY",
+      start: "June 2025",
+      end: "Present",
+      description:
+        "Building backend services for a multi-tenant messaging platform using NestJS, Kafka, gRPC, ScyllaDB, ClickHouse, and PostgreSQL. Delivered authentication, sessions, API keys, tokens, RBAC, permissions, invitations, SMS and MMS workflows, bulk and scheduled messaging, webhooks, message logs, templates, notifications, billing, wallet operations, auto-recharge, payment history, and multi-provider payment integrations. Also worked on Kafka consumer reliability, retry flows, rate limiting, load testing, deployments, data migrations, and production debugging.",
+    },
+    {
+      company: "Freelance",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Software Developer",
+      logoUrl:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/h_200,w_200/v1745657872/atkjbhocsiyv2zw2rg80.jpg",
+      start: "Mar 2025",
+      end: "May 2025",
+      description:
+        "Built a Python trading bot that converted two swing-trading strategies into executable rules, with a historical data analysis and backtesting workflow covering six months of market data.",
+    },
+    {
+      company: "EcoStart Ventures Inc.",
+      href: "https://www.climachampions.com",
+      badges: [],
+      location: "Pune, Maharashtra",
+      title: "Full-time Software Trainee",
+      logoUrl:
+        "https://res.cloudinary.com/dmhge6flm/image/upload/v1717398740/Favicon.png",
+      start: "Jan 2024",
+      end: "Mar 2025",
+      description:
+        "Built REST APIs in Node.js, designed and optimized database schemas, implemented vector search, and integrated AI-assisted workflows to improve search and automate platform operations.",
+    },
+  ],
+  education: [
+    {
+      school: "Chandigarh University",
+      href: "https://www.cuchd.in",
+      degree: "Bachelor of Computer Applications",
+      logoUrl: "https://www.cuchd.in/latest-assets/images/fevicon.png",
+      start: "2023",
+      end: "2026",
+    },
+  ],
+  projects: [
+    {
+      title: "PG-CDC",
+      href: "https://github.com/abhishek-shivale/pg-cdc",
+      dates: "2026 to Present",
+      active: true,
+      description:
+        "A production-grade learning project for PostgreSQL change data capture. It explores WAL and logical replication, event streaming through Redpanda, asynchronous Rust processing, ClickHouse synchronization, Docker-based infrastructure, and terminal monitoring.",
+      technologies: [
+        "Rust",
+        "PostgreSQL",
+        "CDC",
+        "Redpanda",
+        "ClickHouse",
+        "Tokio",
+        "Ratatui",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/pg-cdc",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785201827/ChatGPT_Image_Jul_28_2026_06_53_40_AM_seeok7.png",
+      video: "",
+    },
+    {
+      title: "Sketch",
+      href: "https://github.com/abhishek-shivale/sketch",
+      dates: "2026",
+      active: true,
+      description:
+        "A real-time collaborative drawing server built with Rust, Axum, Tokio, and WebSockets. It includes concurrent state management, event broadcasting, room coordination, and drawing history replay.",
+      technologies: ["Rust", "Axum", "Tokio", "WebSockets", "Serde"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/sketch",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785202553/ChatGPT_Image_Jul_28_2026_07_05_44_AM_pf8dei.png",
+      video: "",
+    },
+    {
+      title: "Cassie",
+      href: "https://github.com/abhishek-shivale/cassie",
+      dates: "2026",
+      active: false,
+      description:
+        "A permissionless optimistic oracle on Solana. Users can post bountied questions, submit bonded answers, dispute proposals, and resolve escalated cases through a reputation-weighted council. It also supports callbacks for external programs.",
+      technologies: [
+        "Rust",
+        "Solana",
+        "Anchor",
+        "Next.js",
+        "Surfpool",
+        "CPI",
+        "PDAs",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/cassie",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203778/ChatGPT_Image_Jul_28_2026_07_26_04_AM_ftqdl7.png",
+      video: "/Cassie.mp4",
+    },
+    {
+      title: "Stele",
+      href: "https://github.com/abhishek-shivale/stele",
+      dates: "2026",
+      active: false,
+      description:
+        "A permissionless Solana protocol for permanently publishing wallet-attributed records of real-world events. Content hashes are anchored on Solana while complete content can be stored through Arweave.",
+      technologies: ["Rust", "Solana", "Anchor", "Arweave", "PDAs"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/stele",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203305/ChatGPT_Image_Jul_28_2026_07_18_15_AM_rvvjkh.png",
+      video: "",
+    },
+    {
+      title: "Sol Key Manager",
+      href: "https://github.com/abhishek-shivale/sol-keymgr",
+      dates: "2026",
+      active: false,
+      description:
+        "A Solana-focused key management tool designed around encrypted key storage, safer local workflows, and a cleaner developer experience for managing wallets and signing operations.",
+      technologies: ["Rust", "Solana", "Cryptography", "CLI", "Key Management"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/sol-keymgr",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203234/ChatGPT_Image_Jul_28_2026_07_17_04_AM_qmokhe.png",
+      video: "",
+    },
+    {
+      title: "TimeFlow",
+      href: "https://github.com/abhishek-shivale/TimeFlow",
+      dates: "2026",
+      active: false,
+      description:
+        "A minimalist and responsive stopwatch application built with Rust and Dioxus 0.7, with start, pause, reset, and cross-platform interface support including an iOS target.",
+      technologies: ["Rust", "Dioxus", "iOS", "Responsive UI"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/TimeFlow",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dygubvmg6/image/upload/v1785204620/timeflow-1536x1024_jyjk0i.png",
+      video: "",
+    },
+    {
+      title: "Novel Hunter",
+      href: "https://github.com/abhishek-shivale/novel-hunter",
+      dates: "2025",
+      active: true,
+      description:
+        "A Flask scraper and API that extracts novel rankings, metadata, chapter lists, and chapter content from online reading sources.",
+      technologies: ["Python", "Flask", "Web Scraping", "REST API"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/novel-hunter",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/novel-hunter.png",
+      video: "",
+    },
+    {
+      title: "Video Transcoding Pipeline",
+      href: "https://github.com/abhishek-shivale/video_streaming",
+      dates: "2025",
+      active: true,
+      description:
+        "A scalable video processing pipeline built with TurboRepo, NestJS, BullMQ, Redis, PostgreSQL, AWS S3, Docker, and FFmpeg. It supports direct uploads, queued processing, multi-bitrate HLS output, and independently scalable worker services.",
+      technologies: [
+        "TurboRepo",
+        "NestJS",
+        "Node.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "BullMQ",
+        "Redis",
+        "AWS S3",
+        "FFmpeg",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/video_streaming",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/Video_Transcoding.mp4",
+    },
+    {
+      title: "AI-powered Twitter Bot",
+      href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
+      dates: "2025",
+      active: false,
+      description:
+        "An automated TypeScript bot that reads anime news from RSS feeds, generates post content through an AI workflow, schedules publishing, and records application logs.",
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "node-cron",
+        "Winston",
+        "LangChain",
+        "Twitter API",
+        "RSS",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/bot.png",
+      video: "",
+    },
+    {
+      title: "TinyURL",
+      href: "https://tinyurl-one.vercel.app",
+      dates: "2024 to Present",
+      active: true,
+      description:
+        "A URL shortening application with custom slugs, password protection, authentication, click tracking, and a database-backed management interface.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "shadcn/ui",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://tinyurl-one.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/tinyurl",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/tiny.png",
+      video: "",
+    },
+    {
+      title: "Next.js Starter",
+      href: "https://starter-repo.vercel.app",
+      dates: "2024 to Present",
+      active: true,
+      description:
+        "A reusable Next.js starter template for building scalable web applications with authentication, PostgreSQL, Prisma, Tailwind CSS, and a prepared component system.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "NextAuth",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://starter-repo.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/nextjs-starter",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/template.png",
+      video: "",
+    },
+    {
+      title: "Email Validator",
+      href: "https://email-validator-omega.vercel.app",
+      dates: "2024",
+      active: false,
+      description:
+        "A free email validation tool for checking and cleaning email lists, designed to improve list quality and reduce invalid addresses before campaigns are sent.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Google Sheets",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://email-validator-omega.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/abhishek-shivale/Email_Validator",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/email.png",
+      video: "",
+    },
+    {
+      title: "ChronoGrapher Contribution",
+      href: "https://github.com/GitBrincie212/ChronoGrapher",
+      dates: "Active Contribution",
+      active: true,
+      description:
+        "An open-source contribution to a developer-experience focused job scheduler and workflow orchestration platform designed for speed and extensibility.",
+      technologies: ["Open Source", "Job Scheduling", "Workflow Orchestration"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/GitBrincie212/ChronoGrapher",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+  ],
+} as const;
 
-    work: [
-        {
-            company: "Xoyal IT Services",
-            href: "#",
-            badges: [
-                'Currently Wokring'
-            ],
-            location: "Remote",
-            title: "Nodejs Developer",
-            logoUrl:
-                "https://media.licdn.com/dms/image/v2/D4D0BAQEeljnxoh_UTA/company-logo_100_100/B4DZmErQYRGsAQ-/0/1758867556359/xoyal_logo?e=1764806400&v=beta&t=SCt1iNkpkNghH3fTCNMiH4EImS4lcysyxFYuhgSsJqY",
-            start: "June 2025",
-            end: "Present",
-            description:
-                "Currently, I am working as a Node.js Developer, where I have set up the entire backend architecture using NestJS, Kafka, and gRPC. My role involves implementing new features and resolving bugs as required.",
-        }, {
-            company: "Freelancing",
-            href: "#",
-            badges: [],
-            location: "Remote",
-            title: "Python Developer",
-            logoUrl:
-                "https://res.cloudinary.com/dygubvmg6/image/upload/h_200,w_200/v1745657872/atkjbhocsiyv2zw2rg80.jpg",
-            start: "Mar 2025",
-            end: "June 2025",
-            description:
-                "I worked as  a Freelance Developer, where I developed a trading bot using Python that analyzes six months of historical data to predict swing trade movements, targeting a 5-15% monthly return. My work focuses on converting trading strategies into code.",
-        }, {
-            company: "EcoStart Ventures Inc",
-            href: "https://www.climachampions.com",
-            badges: [],
-            location: "Remote",
-            title: "Full-time Software Trainee",
-            logoUrl:
-                "https://res.cloudinary.com/dmhge6flm/image/upload/v1717398740/Favicon.png",
-            start: "Jan 2024",
-            end: "Mar 2025",
-            description:
-                "I worked as a Node.js Backend Developer at EcoStart, where my main task was to understand requirements and create solutions for various problems. I designed and optimized database schemas, built RESTful APIs, and implemented vector search to improve search accuracy. I also integrated AI into their platform to automate processes and enhance functionality.",
-        },
-    ],
-    education: [
-        {
-            school: "Chandigarh University",
-            href: "https://www.cuchd.in",
-            degree: "BCA",
-            logoUrl: "https://www.cuchd.in/latest-assets/images/fevicon.png",
-            start: "2023",
-            end: "2026",
-        },
-    ],
-    projects: [
-        {
-            title: "Video Transcoding Pipeline",
-            href: "https://github.com/abhishek-shivale/video_streaming",
-            dates: "Jan 2025 - Feb 2025",
-            active: true,
-            description:
-                "A video transcoding pipeline built with TurboRepo, NestJS and BullMQ. Supports direct-to-S3 uploads, auto-generates multi-bitrate HLS streams, and handles 100+ video jobs.",
-            technologies: [
-                "TurboRepo",
-                "NestJS",
-                "Node.js",
-                "TypeScript",
-                "PostgreSQL",
-                "Prisma",
-                "BullMQ",
-                "Redis",
-                "AWS S3",
-                "Docker",
-            ],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/abhishek-shivale/video_streaming",
-                    icon: <Icons.github className="size-3"/>,
-                },
-            ],
-            image: "",
-            video: "/Video_Transcoding.mp4",
-        },
-        {
-            title: "Novel Hunter",
-            href: "https://github.com/abhishek-shivale/novel-hunter",
-            dates: "Jan 2025 - Present",
-            active: true,
-            description:
-                "A Flask-based web scraper that provides novel rankings, chapter lists, and detailed novel information through simple API endpoints. Helps users discover and explore novels by category with ease.",
-            technologies: [
-                "Flask",
-                "Python",
-            ],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/abhishek-shivale/novel-hunter",
-                    icon: <Icons.github className="size-3"/>,
-                },
-            ],
-            image: "/novel-hunter.png",
-            video: "",
-        },
-        {
-            title: "Tiny Url",
-            href: "https://tinyurl-one.vercel.app",
-            dates: "Nov 2024 - Present",
-            active: true,
-            description:
-                "A modern URL shortener built with Next.js, featuring custom slugs, password protection, click tracking, and more. Perfect for personal or SaaS use.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Shadcn UI",
-            ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://tinyurl-one.vercel.app",
-                    icon: <Icons.globe className="size-3"/>,
-                },
-                {
-                    type: "Source",
-                    href: "https://github.com/abhishek-shivale/tinyurl",
-                    icon: <Icons.github className="size-3"/>,
-                },
-            ],
-            image: "/tiny.png",
-            video: "",
-        },
-        {
-            title: "NextJS Template",
-            href: "https://starter-repo.vercel.app",
-            dates: "Nov 2024 - Present",
-            active: true,
-            description:
-                "A Next.js starter template to help you build scalable, modern web applications fast with NextAuth as the authentication provider.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "PostgreSQL",
-                "Prisma",
-                "TailwindCSS",
-                "Shadcn UI",
-                "Next Auth",
-            ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://starter-repo.vercel.app",
-                    icon: <Icons.globe className="size-3"/>,
-                },
-                {
-                    type: "Source",
-                    href: "https://github.com/abhishek-shivale/nextjs-starter",
-                    icon: <Icons.github className="size-3"/>,
-                },
-            ],
-            image: "/template.png",
-            video: "",
-        },
-        {
-            title: "Email Validator",
-            href: "https://email-validator-omega.vercel.app",
-            dates: "september 2024 - december 2024",
-            active: true,
-            description:
-                "free email validation tool to quickly clean and verify your email lists. Improve deliverability and boost engagement with accurate email addresses.",
-            technologies: [
-                "Next.js",
-                "Typescript",
-                "TailwindCSS",
-                "Shadcn UI",
-                "G-sheets",
-            ],
-            links: [
-                {
-                    type: "Website",
-                    href: "https://email-validator-omega.vercel.app",
-                    icon: <Icons.globe className="size-3"/>,
-                },
-                {
-                    type: "Source",
-                    href: "https://github.com/abhishek-shivale/Email_Validator",
-                    icon: <Icons.github className="size-3"/>,
-                },
-            ],
-            image: "/email.png",
-            video: "",
-        },
-        {
-            title: "AI-powered Twitter bot",
-            href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
-            dates: "January 2025 - Present",
-            active: true,
-            description:
-                "An AI-powered Twitter bot built with TypeScript to share anime updates via RSS feeds, AI-generated content, and automated scheduling.",
-            technologies: [
-                "Node.js",
-                "Typescript",
-                "Node-corn",
-                "Winston",
-                "Langchain",
-                "Twitter API",
-            ],
-            links: [
-                {
-                    type: "source",
-                    href: "https://github.com/abhishek-shivale/anime_news_ai_bot",
-                    icon: <Icons.globe className="size-3"/>,
-                },
-            ],
-            image: "/bot.png",
-            video: "",
-        },
-    ],
     // hackathons: [
     //   {
     //     title: "Hack Western 5",
@@ -678,4 +831,3 @@ export const DATA = {
     //     ],
     //   },
     // ],
-} as const;
