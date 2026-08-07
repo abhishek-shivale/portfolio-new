@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Software Engineering Blog",
+  title: "Blog",
   description:
-    "Software engineering articles by Abhishek Shivale about backend systems, Node.js, TypeScript, databases, distributed systems, and Rust.",
+    "engineering articles by Abhishek Shivale about backend systems, Node.js, TypeScript, databases, distributed systems, and Rust.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Software Engineering Blog",
+    title: "Blog",
     description:
       "Articles about backend systems, Node.js, TypeScript, databases, distributed systems, and Rust.",
     url: "/blog",
@@ -28,7 +28,7 @@ export default async function BlogPage() {
     <section>
       <BlurFade delay={BLUR_FADE_DELAY}>
         <h1 className="font-medium text-2xl mb-8 tracking-tighter">
-          Software Engineering Blog
+          Blog
         </h1>
       </BlurFade>
       {posts

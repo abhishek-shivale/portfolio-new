@@ -3,14 +3,14 @@ import {HomeIcon, NotebookIcon} from "lucide-react";
 import {YOE} from "@/lib/utils";
 
 export const DATA = {
-  name: "Abhishek Shivale",
+  name: "Abhishek",
   initials: "AS",
   url: "https://abhishek.win",
   location: "Pune, Maharashtra, India",
   locationLink: "https://www.google.com/maps/place/pune",
   description:
-    "Backend engineer in Pune building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, PostgreSQL, and Rust.",
-  summary: `A backend engineer with ${YOE} years of experience building multi-tenant and event-driven systems using Node.js, TypeScript, NestJS, Kafka, gRPC, ScyllaDB, ClickHouse, PostgreSQL, and MongoDB. Experienced in authentication, authorization, messaging, payments, billing, background processing, database design, load testing, and production debugging. I also build Rust systems projects focused on PostgreSQL change data capture, asynchronous processing, real-time networking, and Solana programs.`,
+    `I am a backend engineer with ${YOE} years of experience building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, PostgreSQL, and Rust.`,
+  summary: `I love building software that scales and solves real problems. I build software in multiple languages, primarily Rust, JavaScript, and TypeScript, and try to make every system as efficient as possible. I have built multiple payment integrations for high-scale systems and event-driven systems using Kafka that process apporx more than 2 million events per day.`,
   avatarUrl: "/me.png",
   skills: [
     "Node.js",
@@ -47,7 +47,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "https://blog.abhishek.win", icon: NotebookIcon, label: "Blog" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "abhishekshivale01@gmail.com",
@@ -188,7 +188,7 @@ export const DATA = {
       ],
       image:
         "https://res.cloudinary.com/dygubvmg6/image/upload/v1785203778/ChatGPT_Image_Jul_28_2026_07_26_04_AM_ftqdl7.png",
-      video: "/Cassie.mp4",
+      video: "https://lofi-assets.abhishek.win/portfolio/Cassie.mp4",
     },
     {
       title: "Sketch",
@@ -312,7 +312,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "/Video_Transcoding.mp4",
+      video: "https://lofi-assets.abhishek.win/portfolio/Video_Transcoding.mp4",
     },
     {
       title: "AI-powered Twitter Bot",
