@@ -134,6 +134,20 @@
   text-align: right;
   color: gray;
 }
+
+.prose .mermaid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.prose .mermaid svg {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
  
 code[data-line-numbers-max-digits="2"] > [data-line]::before {
   width: 2rem;
