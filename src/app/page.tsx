@@ -4,11 +4,11 @@ import { GitHubCalendar } from "@/components/github-calendar";
 import { Icons } from "@/components/icons";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getBlogPosts } from "@/data/blog";
 import { DATA } from "@/data/resume";
 import { ArrowUpRightIcon, MailIcon, MapPinIcon, NotebookIcon } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 
 const GITHUB_USERNAME = DATA.contact.social.GitHub.url.split("/").pop()!;
@@ -96,16 +96,16 @@ export default async function Page() {
         <Banner />
         <div className="space-y-6 px-4 pb-10 pt-5 sm:px-6">
           <div className="flex items-center gap-4">
-            <Avatar className="ring-double size-24 shrink-0 rounded-2xl border bg-card sm:size-28">
-              <AvatarImage
-                alt={DATA.name}
-                className="object-contain"
+            <div className="ring-double relative size-24 shrink-0 overflow-hidden rounded-2xl border bg-card sm:size-28">
+              <Image
                 src={DATA.avatarUrl}
+                alt={DATA.name}
+                fill
+                priority
+                sizes="112px"
+                className="object-contain"
               />
-              <AvatarFallback className="rounded-2xl">
-                {DATA.initials}
-              </AvatarFallback>
-            </Avatar>
+            </div>
             <div className="min-w-0">
               <h1 className="text-4xl font-semibold tracking-tight">
                 {DATA.name}

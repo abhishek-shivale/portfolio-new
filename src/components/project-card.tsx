@@ -1,3 +1,4 @@
+import { LazyVideo } from "@/components/lazy-video";
 import { cn } from "@/lib/utils";
 import { ArrowUpRightIcon } from "lucide-react";
 import Image from "next/image";
@@ -39,12 +40,8 @@ export function ProjectCard({
         className="relative block aspect-video overflow-hidden rounded-lg border bg-card"
       >
         {video ? (
-          <video
+          <LazyVideo
             src={video}
-            autoPlay
-            loop
-            muted
-            playsInline
             className="pointer-events-none size-full object-cover object-top"
           />
         ) : image ? (

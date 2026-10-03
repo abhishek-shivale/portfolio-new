@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og.png",
+        url: "/og.jpg",
         width: 1200,
         height: 630,
         alt: `${DATA.name}, Backend Engineer`,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: `${DATA.name} | Backend Engineer in Pune`,
     description: DATA.description,
     creator: "@abhishekwinn",
-    images: ["/og.png"],
+    images: ["/og.jpg"],
   },
 };
 
