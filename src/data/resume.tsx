@@ -10,7 +10,13 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/pune",
   description:
     `I am a backend engineer with ${YOE} years of experience building reliable distributed systems with Node.js, TypeScript, Kafka, gRPC, PostgreSQL, and Rust.`,
-  summary: `I love building software that scales and solves real problems. I build software in multiple languages, primarily Rust, JavaScript, and TypeScript, and try to make every system as efficient as possible. I have built multiple payment integrations for high-scale systems and event-driven systems using Kafka that process apporx more than 2 million events per day.`,
+  title: "Backend Engineer",
+  bio: [
+    `I build **reliable distributed systems** with **Node.js**, **Kafka**, **gRPC**, and **Rust**.`,
+    `Currently building a **multi-tenant messaging platform** at **Xoyal IT Services**.`,
+    `Shipped **payment integrations** and **event pipelines** handling **2M+ events a day**.`,
+  ],
+  summary: `I love building software that scales and solves real problems. I build software in multiple languages, primarily Rust, JavaScript, and TypeScript, and try to make every system as efficient as possible. I have built multiple payment integrations for high-scale systems and event-driven systems using Kafka that process more than 2 million events per day.`,
   avatarUrl: "/pfp-transparent.png",
   skills: [
     "Node.js",

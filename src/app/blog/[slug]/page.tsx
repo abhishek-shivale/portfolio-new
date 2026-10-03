@@ -4,7 +4,8 @@ import MermaidRenderer from "@/components/mermaid-renderer";
 import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
+import { ArrowLeftIcon, CalendarIcon, ClockIcon, MailIcon } from "lucide-react";
+import Link from "next/link";
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
@@ -70,6 +71,9 @@ export default async function Blog({
     notFound();
   }
 
+  const words = post.source.replace(/<[^>]+>/g, " ").split(/\s+/).length;
+  const readingMinutes = Math.max(1, Math.round(words / 220));
+
   return (
     <section id="blog">
       <script
@@ -103,20 +107,58 @@ export default async function Blog({
           }),
         }}
       />
-      <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
-        {post.metadata.title}
-      </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm max-w-[650px]">
-        <Suspense fallback={<p className="h-5" />}>
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            {formatDate(post.metadata.publishedAt)}
-          </p>
-        </Suspense>
-      </div>
+      <header className="border-b bg-hatch px-4 py-10 sm:px-6 sm:py-14">
+        <div className="mx-auto max-w-[720px]">
+          <Link
+            href="/blog"
+            className="chip mb-6 text-muted-foreground hover:text-foreground"
+          >
+            <ArrowLeftIcon className="size-4" />
+            All posts
+          </Link>
+          <h1 className="text-balance text-4xl font-bold tracking-tight sm:text-5xl">
+            {post.metadata.title}
+          </h1>
+          {post.metadata.summary && (
+            <p className="mt-4 text-pretty text-lg text-muted-foreground">
+              {post.metadata.summary}
+            </p>
+          )}
+          <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+            <span className="flex items-center gap-1.5">
+              <CalendarIcon className="size-4" />
+              {formatDate(post.metadata.publishedAt)}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <ClockIcon className="size-4" />
+              {readingMinutes} min read
+            </span>
+          </div>
+        </div>
+      </header>
       <article
-        className="prose dark:prose-invert"
+        className="prose mx-auto max-w-[768px] px-4 py-10 dark:prose-invert sm:px-6 prose-headings:scroll-mt-24 prose-headings:tracking-tight prose-a:underline-offset-4 prose-code:before:content-none prose-code:after:content-none"
         dangerouslySetInnerHTML={{ __html: post.source }}
       ></article>
+      <div className="mx-auto max-w-[768px] px-4 pb-12 sm:px-6">
+        <div className="panel flex flex-col items-start justify-between gap-4 p-5 sm:flex-row sm:items-center">
+          <div>
+            <p className="font-semibold">Thanks for reading.</p>
+            <p className="text-sm text-muted-foreground">
+              Questions or corrections? Email me.
+            </p>
+          </div>
+          <div className="flex gap-3">
+            <Link href={`mailto:${DATA.contact.email}`} className="chip-dark">
+              <MailIcon className="size-4" />
+              Email me
+            </Link>
+            <Link href="/blog" className="chip">
+              More posts
+            </Link>
+          </div>
+        </div>
+      </div>
       <MermaidRenderer />
     </section>
   );

@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 
@@ -69,13 +70,29 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
+          "min-h-screen bg-background bg-hatch font-sans antialiased",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            {children}
+            <div className="mx-auto flex min-h-screen max-w-4xl flex-col border-x bg-background pb-24">
+              <div className="flex-1">{children}</div>
+              <footer className="border-t px-6 py-10 text-center text-sm text-muted-foreground">
+                <p>
+                  Built by{" "}
+                  <a href={DATA.contact.social.GitHub.url} className="font-medium text-foreground underline underline-offset-4">
+                    {DATA.name}
+                  </a>
+                  . Writing on backend systems lives in the{" "}
+                  <Link href="/blog" className="font-medium text-foreground underline underline-offset-4">
+                    blog
+                  </Link>
+                  .
+                </p>
+                <p className="mt-2 text-xs">© {new Date().getFullYear()} {DATA.name}</p>
+              </footer>
+            </div>
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
